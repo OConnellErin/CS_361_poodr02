@@ -1,0 +1,21 @@
+# Bike
+
+class Bike
+
+  STANDARD_WEIGHT = 200 # lbs
+
+  attr_accessor :id, :color, :price, :weight, :rented, :cargo_contents
+
+  def initialize(id = 0, color = "null", price = 0, weight = STANDARD_WEIGHT, rented = false)
+    @id = id
+    @color = color
+    @price = price
+    @weight = weight
+    @rented = rented
+  end
+
+  def rent!
+    self.rented = true
+  end
+
+end
